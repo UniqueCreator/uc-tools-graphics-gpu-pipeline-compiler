@@ -1,0 +1,52 @@
+version: 1.0.{build}
+pull_requests:
+  do_not_increment_build_number: true
+image: Visual Studio 2019 Preview
+configuration: Release
+platform: x64
+clone_folder: c:\projects
+build:
+  project: c:\projects\build\build.sln
+  parallel: true
+  verbosity: minimal
+before_package:
+- ps: >-
+    $autopkgFile = "package.nuspec"
+
+
+    # Get the ".autopkg.template" file, replace "@version" with the Appveyor version number, then save to the ".autopkg" file.
+
+    cat ($autopkgFile + ".template") | % { $_ -replace "@version", $env:appveyor_build_version } > $autopkgFile
+
+
+    .\nuget.exe pack package.nuspec
+
+
+    # Push all newly created .nupkg files as Appveyor artifacts for later deployment.
+
+    Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+artifacts:
+- path: '*.nupkg'
+  name: Stefan Dyulgerov
+before_deploy:
+- ps: >-
+    $autopkgFile = "package.nuspec"
+
+
+    # Get the ".autopkg.template" file, replace "@version" with the Appveyor version number, then save to the ".autopkg" file.
+
+    cat ($autopkgFile + ".template") | % { $_ -replace "@version", $env:appveyor_build_version } > $autopkgFile
+
+
+    .\nuget.exe pack package.nuspec
+
+
+    # Push all newly created .nupkg files as Appveyor artifacts for later deployment.
+
+    Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+deploy:
+- provider: NuGet
+  server: http://underworld2017.ddns.net:5555
+  api_key:
+    secure: BrMmGYIAQqHeb/6UTz86bTHm3dW80f3ANWY7F4sLYks=
+  skip_symbols: true
