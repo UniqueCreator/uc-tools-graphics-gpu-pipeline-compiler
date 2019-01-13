@@ -14,9 +14,9 @@
     <tags>serialization,unique,uc,creator,pipeline</tags>
   </metadata>
   <files>
-    <file src = "include\**" target = "include" />
-    <file src = "lib\**"     target = "lib" />
-    <file src = "build\uc-serialization.props"   target = "build" />
-    <file src = "build\uc-serialization.targets" target = "build" />
+    <file src = "bin\win-x64\Release\uc-gpu-pipeline-compiler-dev.exe" target = "bin" />
+    <file src = "bin\win-x64\Release-uc-backend-public\uc-gpu-pipeline-compiler-public.exe" target = "bin" />
+    <file src = "build\uc-tools-graphics-gpu-pipeline-compiler.props"   target = "build" />
+    <file src = "build\uc-tools-graphics-gpu-pipeline-compiler.targets"   target = "build" />
   </files>
 </package>
