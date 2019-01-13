@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src" />
+    <Filter Include="src\generator" />
+    <Filter Include="src\parser" />
+    <Filter Include="src\pch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\generator\uc_pso_generator_blend.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_blend_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_blend_op.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_classification.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_color_write_enable.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_comparison_function.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_conservative_rasterization_mode.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_cull_mode.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_depth_stencil_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_depth_write_mask.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_dxgi_format.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_dxgi_sample_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_fill_mode.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_includes.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_index_buffer_strip_cut_value.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_input_layout.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_input_layout_element.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_logic_op.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_nil.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_dxgi_format.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_dxgi_sample_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_index_buffer_strip_cut_value.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_pipeline_state_flags.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_primitive_topology_type.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_root_signature.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_optional_shader.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_pipeline_state_flags.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_primitive_topology_type.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_rasterizer_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_render_target_blend_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_so_declaration_entry.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_so_desc.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_stencil_function.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generator\uc_pso_generator_stencil_op.h">
+      <Filter>src\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_compile_unit.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_annotation.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_blend.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_blend_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_blend_ops.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_classification.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_color_write_enable.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_comparison_function.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_conservative_rasterization_mode.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_cull_mode.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_depth_function.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_depth_stencil_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_depth_write_mask.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_dxgi_format.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_dxgi_sample_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_error_handler.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_fill_mode.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_imports.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_includes.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_index_buffer_strip_cut_value.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_input_layout.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_input_layout_element.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_logic_op.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_named_value.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_pipeline_state_flags.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_pipeline_state_object.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_primitive_topology_type.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_rasterizer_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_render_target_blend_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_render_target_write_mask.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_so_declaration_entry.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_so_desc.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_stencil_function.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parser\uc_pso_parser_stencil_op.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pch\pch.h">
+      <Filter>src\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pch\targetver.h">
+      <Filter>src\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pipeline_state_types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_error_messages.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_ast.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_ast_adapted.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_command_line.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_exception.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_generator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_parser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_parser_struct.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_parser_utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\uc_pso_resource_access.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src" />
+    <Filter Include="src\pch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\pch\pch.cpp">
+      <Filter>src\pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src" />
+    <Filter Include="src\generator" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\generator\uc_pso_generator_so_desc.cpp">
+      <Filter>src\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uc_pso_generator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uc_pso_identifier.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uc_pso_main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uc_pso_parser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uc_pso_parser_utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\resources\dx12_gpu_pso_mypso.cpp.txt" />
+    <Text Include="..\resources\dx12_gpu_pso_mypso.h.txt" />
+    <Text Include="..\resources\dx12_gpu_compute_pso_mypso.cpp.txt" />
+    <Text Include="..\resources\dx12_gpu_compute_pso_mypso.h.txt" />
+    <Text Include="..\resources\unique_creator_compute_pso_mypso.cpp.txt" />
+    <Text Include="..\resources\unique_creator_compute_pso_mypso.h.txt" />
+    <Text Include="..\resources\unique_creator_pso_mypso.cpp.txt" />
+    <Text Include="..\resources\unique_creator_pso_mypso.h.txt" />
+  </ItemGroup>
+</Project>
