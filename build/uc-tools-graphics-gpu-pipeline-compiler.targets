@@ -1,24 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)..\lib\win-x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)..\lib\win-x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup>
-    <Link>
-      <AdditionalDependencies>uc-serialialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup>
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-
 </Project>
