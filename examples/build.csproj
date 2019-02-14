@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="UcToolsGenerateGraphics" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+        <UCToolsGraphicsPipelineTool1 Condition="$(UCToolsGraphicsPipelineTool1) == ''">$(MSBuildThisFileDirectory)..\bin\win-x64\Release\uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <GraphicsPipelineStateObject Include="staticgeometry.pso">
+        <EntryPointName>depth_only_geometry</EntryPointName>
+    </GraphicsPipelineStateObject>
+
+    <GraphicsPipelineStateObject Include="staticgeometry.pso">
+        <EntryPointName>shadows_geometry</EntryPointName>
+    </GraphicsPipelineStateObject>
+  </ItemGroup>                                                              
+
+  <Import Project="$(MSBuildThisFileDirectory)..\build\uc-tools-graphics-gpu-pipeline-compiler.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\build\uc-tools-graphics-gpu-pipeline-compiler.targets" />
+</Project>
