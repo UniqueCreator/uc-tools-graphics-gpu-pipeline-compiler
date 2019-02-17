@@ -11,6 +11,7 @@ build_script:
     nuget restore c:\projects\build\build.sln
 
     msbuild c:\projects\build\build.sln /p:Configuration="Release" /verbosity:quiet
+    msbuild c:\projects\build\build.sln /p:Configuration="Release-uc-backend-public" /verbosity:quiet
 
 before_package:
 - ps: >-
