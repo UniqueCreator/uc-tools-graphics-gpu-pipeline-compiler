@@ -1,0 +1,8 @@
+import staticgeometry
+
+PipelineStateObject depth_only_geometry : solid_geometry = 
+{
+    .DepthStencilState      = depth_only
+    .RTVFormats             = { }
+}
+

@@ -1,0 +1,10 @@
+import staticgeometry
+
+PipelineStateObject shadows_geometry : depth_only_geometry =
+{
+    .RasterizerState        = solid_msaa
+    .DepthStencilState      = depth_only_inverted
+    .SampleDescription      = { .Count = 4 .Quality = 0 }
+}
+
+
