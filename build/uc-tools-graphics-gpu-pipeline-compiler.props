@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <UCToolsGraphicsPipelineTool1 Condition="$(UCToolsGraphicsPipelineTool1) == ''">$(MSBuildThisFileDirectory)..\..\lib\native\uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1>
-        <UCToolsGraphicsPipelineTool1Path Condition="$(UCToolsGraphicsPipelineTool1Path) == ''">$(MSBuildThisFileDirectory)..\..\lib\native\</UCToolsGraphicsPipelineTool1Path>
+
+        <UCToolsGraphicsPipelineTool1 Condition="$(UCToolsGraphicsPipelineTool1) == ''">$(MSBuildThisFileDirectory)..\lib\native\uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1>
+        <UCToolsGraphicsPipelineTool1Path Condition="$(UCToolsGraphicsPipelineTool1Path) == ''">$(MSBuildThisFileDirectory)..\lib\native\</UCToolsGraphicsPipelineTool1Path>
         <UCToolsGraphicsPipelineTool1Name Condition="$(UCToolsGraphicsPipelineTool1Name) == ''">uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1Name>
+
+        <UCToolsGraphicsPipelineTool2     Condition="$(UCToolsGraphicsPipelineTool2) == ''">$(MSBuildThisFileDirectory)..\lib\native\uc-gpu-pipeline-compiler-public.exe</UCToolsGraphicsPipelineTool2>
+        <UCToolsGraphicsPipelineTool2Path Condition="$(UCToolsGraphicsPipelineTool2Path) == ''">$(MSBuildThisFileDirectory)..\lib\native\</UCToolsGraphicsPipelineTool2Path>
+        <UCToolsGraphicsPipelineTool2Name Condition="$(UCToolsGraphicsPipelineTool2Name) == ''">uc-gpu-pipeline-compiler-public.exe</UCToolsGraphicsPipelineTool2Name>
     </PropertyGroup>
 </Project>
