@@ -2,5 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <UCToolsGraphicsPipelineTool1 Condition="$(UCToolsGraphicsPipelineTool1) == ''">$(MSBuildThisFileDirectory)..\..\lib\native\uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1>
+        <UCToolsGraphicsPipelineTool1Path Condition="$(UCToolsGraphicsPipelineTool1Path) == ''">$(MSBuildThisFileDirectory)..\..\lib\native\</UCToolsGraphicsPipelineTool1Path>
+        <UCToolsGraphicsPipelineTool1Name Condition="$(UCToolsGraphicsPipelineTool1Name) == ''">uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1Name>
     </PropertyGroup>
 </Project>
