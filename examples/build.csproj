@@ -3,14 +3,16 @@
 
   <PropertyGroup>
         <UCToolsGraphicsPipelineTool1 Condition="$(UCToolsGraphicsPipelineTool1) == ''">$(MSBuildThisFileDirectory)..\bin\win-x64\Release\uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1>
+        <UCToolsGraphicsPipelineTool1Path Condition="$(UCToolsGraphicsPipelineTool1Path) == ''">$(MSBuildThisFileDirectory)..\bin\win-x64\Release\</UCToolsGraphicsPipelineTool1Path>
+        <UCToolsGraphicsPipelineTool1Name Condition="$(UCToolsGraphicsPipelineTool1Name) == ''">uc-gpu-pipeline-compiler-dev.exe</UCToolsGraphicsPipelineTool1Name>
   </PropertyGroup>
 
   <ItemGroup>
-    <GraphicsPipelineStateObject Include="staticgeometry.pso">
+    <GraphicsPipelineStateObject Include="depth_only_geometry.pso">
         <EntryPointName>depth_only_geometry</EntryPointName>
     </GraphicsPipelineStateObject>
 
-    <GraphicsPipelineStateObject Include="staticgeometry.pso">
+    <GraphicsPipelineStateObject Include="shadows_geometry.pso">
         <EntryPointName>shadows_geometry</EntryPointName>
     </GraphicsPipelineStateObject>
   </ItemGroup>                                                              
