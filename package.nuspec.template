@@ -11,7 +11,7 @@
     <iconUrl>http://www.gravatar.com/avatar/df362936893270e6a1b53807fa90e8fa</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Allows Native C++ Applications to use precompiled lzham</description>
-    <tags>serialization,unique,uc,creator,pipeline</tags>
+    <tags>gpu,pso,unique,uc,creator,pipeline</tags>
   </metadata>
   <files>
     <file src = "bin\win-x64\Release\uc-gpu-pipeline-compiler-dev.exe" target = "lib\native" />
