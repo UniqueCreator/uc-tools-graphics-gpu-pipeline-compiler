@@ -1068,7 +1068,7 @@ namespace uc
 
         std::string shader_include( const std::string& shader_name )
         {
-            std::string shader_include_prefix = "#include <autogen/shaders/";
+            std::string shader_include_prefix = "#include <";
 
             std::stringstream s;
 

@@ -3,7 +3,7 @@
 #include <wrl/client.h>
 #include <ppltasks.h>
 
-#include <uc_dev/gx/dx12/dx12.h>
+#include <uc/gx/dx12/dx12.h>
 
 
 namespace uc

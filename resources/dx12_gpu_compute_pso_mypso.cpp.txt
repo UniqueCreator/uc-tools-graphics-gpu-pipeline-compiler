@@ -3,7 +3,7 @@
 
 #include "dx12_gpu_pso_mypso.h"
 
-#include <uc_dev/gx/dx12/dx12.h>
+#include <uc/gx/dx12/dx12.h>
 
 mypso_includes
 
