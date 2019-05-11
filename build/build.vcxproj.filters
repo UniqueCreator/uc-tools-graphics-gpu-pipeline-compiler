@@ -294,9 +294,6 @@
     <ResourceCompile Include="..\resources\resources.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="..\resources\dx12_gpu_pso_mypso.cpp.txt" />
     <Text Include="..\resources\dx12_gpu_pso_mypso.h.txt" />
     <Text Include="..\resources\dx12_gpu_compute_pso_mypso.cpp.txt" />
@@ -305,5 +302,8 @@
     <Text Include="..\resources\unique_creator_compute_pso_mypso.h.txt" />
     <Text Include="..\resources\unique_creator_pso_mypso.cpp.txt" />
     <Text Include="..\resources\unique_creator_pso_mypso.h.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
