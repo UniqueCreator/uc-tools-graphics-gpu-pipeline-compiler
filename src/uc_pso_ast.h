@@ -366,11 +366,11 @@ namespace uc
             using optional_depth_stencil_state      = boost::variant< nil, std::string >;
             using optional_input_layout             = boost::variant< nil, std::string >;
             using optional_root_signature           = boost::variant< nil, std::string >;
-            using optional_uint32                   = boost::variant< nil, uint32_t_>;
+            using optional_uint32                   = boost::variant< nil, uint32_t>;
 
-            using optional_strip_cut_value          = boost::variant< nil, D3D12_INDEX_BUFFER_STRIP_CUT_VALUE_>;
-            using optional_primitive_topology_type  = boost::variant< nil, D3D12_PRIMITIVE_TOPOLOGY_TYPE_>;
-            using optional_dxgi_format              = boost::variant< nil, DXGI_FORMAT_>;
+            using optional_strip_cut_value          = boost::variant< nil, D3D12_INDEX_BUFFER_STRIP_CUT_VALUE>;
+            using optional_primitive_topology_type  = boost::variant< nil, D3D12_PRIMITIVE_TOPOLOGY_TYPE>;
+            using optional_dxgi_format              = boost::variant< nil, DXGI_FORMAT>;
             using optional_dxgi_sample_desc         = boost::variant< nil, DXGI_SAMPLE_DESC>;
             using optional_dxgi_vector              = boost::variant< nil, std::vector<DXGI_FORMAT> >;
             using optional_pipeline_state_flags     = boost::variant< nil, D3D12_PIPELINE_STATE_FLAGS >;

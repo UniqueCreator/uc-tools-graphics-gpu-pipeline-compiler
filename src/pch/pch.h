@@ -11,6 +11,7 @@
 #endif
 
 #include "targetver.h"
+#include <array>
 
 
 
